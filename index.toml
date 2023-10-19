@@ -1,15 +1,15 @@
 [component]
 structures = [ "content_blocks" ]
 label = "Hero"
-description = "Page hero with the heading, description, buttons, and an image"
+description = "Dummy"
 icon = "wysiwyg"
 tags = ["Structure", "Text", "Links"]
 
 [props]
-title = "Hi there, I am Vanessa Marley"
-description_html = "<strong>Photographer</strong> and <strong>Visual Content Strategist</strong> from Albany. I work as a lifestyle, product, and landscape photographer, creating images for a diverse range of requests, from online media to printed artwork."
+title = "Hi there, I am Tushar Gogna"
+description_html = "<strong>Mobile Application Developer</strong> and <strong>Team Lead</strong> from Ontario, Canada. I work as an Android developer and have over 9 years of experience in the domain. I have worked independently as well as with Fortune 500 company (FIS) in the past. I am comfortable working in any setting as I am very adapting. My expertise is in Kotlin, Core Java, Android Jetpack components, JUnit and MVVM architecture."
 image = "/images/01.jpg"
-image_alt = "Vanessa Marley's picture"
+image_alt = "Tushar Gogna's picture"
 cta_button = "Get in touch"
 cta_button_link = "#contact"
 works_button = "See my works"
