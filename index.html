@@ -23,6 +23,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
@@ -39,12 +40,14 @@
 
     <aside class="sidebar" data-sidebar>
 
-      <div class="sidebar-info">
-
+      <div class="sidebar-info"> 
         <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Tushar Gogna" width="80">
-        </figure>
-
+		<div style="display: grid;">
+		<img src="./assets/images/my-avatar.png" style="grid-column-start: first-col; grid-row-start: first-row">
+		<!--<img src="./assets/images/open_to_work_banner.png" style="grid-column-start: first-col; grid-row-start: first-row" class="rotate-img" > -->
+		</div>
+         </figure>
+		 
         <div class="info-content">
           <h1 class="name" title="Tushar Gogna">Tushar Gogna</h1>
 
@@ -176,10 +179,12 @@
       <article class="about  active" data-page="about">
 
         <header>
-          <h2 class="h2 article-title">About me</h2>
+          <h2 class="h2 article-title">About me</h2>  		
+
         </header>
 
         <section class="about-text">
+
           <p>
             I am seasoned Android application developer and team lead based in Ontario, Canada. I have over 9 years of experience in the domain and have worked on variety of applications (see portfolio). 
 			</p>
@@ -206,6 +211,7 @@
               </div>
 
               <div class="service-content-box">
+			  
                 <h4 class="h4 service-item-title">Android Application Development</h4>
 
                 <p class="service-item-text">
@@ -277,7 +283,7 @@
 			<li class="service-item">
 
               <div class="service-icon-box">
-                <img src="./assets/images/client_management_icon.png" alt="mobile app icon" width="40">
+                <img src="./assets/images/devops_icon.png" alt="mobile app icon" width="40">
               </div>
 
               <div class="service-content-box">

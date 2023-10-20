@@ -721,7 +721,16 @@ main {
   line-height: 1.6;
 }
 
+.rotate-img { 
+    display: block;
+    position: absolute; 
+    animation: rotate360 15s linear infinite reverse;
+  }
 
+  @keyframes rotate360 {
+    0% { transform: rotate(0); }
+    100% { transform: rotate(1turn); }
+  }
 /**
  * #clients 
  */
@@ -1337,7 +1346,8 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .sidebar-info { gap: 25px; }
 
-  .avatar-box { border-radius: 30px; }
+  .avatar-box { border-radius: 30px; 
+  }
 
   .avatar-box img { width: 120px; }
 
