@@ -14,61 +14,7 @@
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
-
-:root {
-
-  /**
-   * colors
-   */
-
-  /* gradient */
-
-  --bg-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(240, 1%, 25%) 3%, 
-    hsl(0, 0%, 19%) 97%
-  );
-  --bg-gradient-jet: linear-gradient(
-    to bottom right, 
-    hsla(240, 1%, 18%, 0.251) 0%, 
-    hsla(240, 2%, 11%, 0) 100%
-  ), hsl(240, 2%, 13%);
-  --bg-gradient-yellow-1: linear-gradient(
-    to bottom right, 
-    hsl(45, 100%, 71%) 0%, 
-    hsla(36, 100%, 69%, 0) 50%
-  );
-  --bg-gradient-yellow-2: linear-gradient(
-    135deg, 
-    hsla(45, 100%, 71%, 0.251) 0%, 
-    hsla(35, 100%, 68%, 0) 59.86%
-  ), hsl(240, 2%, 13%);
-  --border-gradient-onyx: linear-gradient(
-    to bottom right, 
-    hsl(0, 0%, 25%) 0%, 
-    hsla(0, 0%, 25%, 0) 50%
-  );
-  --text-gradient-yellow: linear-gradient(
-    to right, 
-    hsl(45, 100%, 72%), 
-    hsl(35, 100%, 68%)
-  );
-
-  /* solid */
-
-  --jet: hsl(0, 0%, 22%);
-  --onyx: hsl(240, 1%, 17%);
-  --eerie-black-1: hsl(240, 2%, 13%);
-  --eerie-black-2: hsl(240, 2%, 12%);
-  --smoky-black: hsl(0, 0%, 7%);
-  --white-1: hsl(0, 0%, 100%);
-  --white-2: hsl(0, 0%, 98%);
-  --orange-yellow-crayola: hsl(45, 100%, 72%);
-  --vegas-gold: hsl(45, 54%, 58%);
-  --light-gray: hsl(0, 0%, 84%);
-  --light-gray-70: hsla(0, 0%, 84%, 0.7);
-  --bittersweet-shimmer: hsl(0, 43%, 51%);
-
+:root{
   /**
    * typography
    */
@@ -108,10 +54,125 @@
 
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
+}
+:root.light {
 
+  /**
+   * colors
+   */
+
+  /* gradient */
+
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(240, 1%, 25%) 3%, 
+    hsl(0, 0%, 19%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right, 
+    hsla(240, 1%, 18%, 0.251) 0%, 
+    hsla(240, 2%, 11%, 0) 100%
+  ), hsl(240, 2%, 13%);
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right, 
+    hsl(45, 100%, 71%) 0%, 
+    hsla(36, 100%, 69%, 0) 50%
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg, 
+    hsla(45, 100%, 71%, 0.251) 0%, 
+    hsla(35, 100%, 68%, 0) 59.86%
+  ), hsl(240, 2%, 13%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(0, 0%, 25%) 0%, 
+    hsla(0, 0%, 25%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right, 
+    hsl(45, 100%, 72%), 
+    hsl(35, 100%, 68%)
+  );
+  
+  /* solid */
+
+  --jet: hsl(0, 0%, 22%);
+  --onyx: hsl(240, 1%, 17%);
+  --eerie-black-1: hsl(240, 2%, 13%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --smoky-black: hsl(0, 0%, 7%);
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+  --orange-yellow-crayola: hsl(45, 100%, 72%);
+  --vegas-gold: hsl(45, 54%, 58%);
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
+ 
 }
 
 
+:root.dark {
+
+  /**
+   * colors
+   */
+
+  /* gradient */
+
+  --bg-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(191, 19%, 51%) 3%, 
+    hsl(15, 17%, 59%) 97%
+  );
+  --bg-gradient-jet: linear-gradient(
+    to bottom right, 
+    hsla(240, 1%, 18%, 0.251) 0%, 
+    hsla(240, 2%, 11%, 0) 100%
+  ), hsl(240, 2%, 13%);
+  
+  --bg-gradient-yellow-1: linear-gradient(
+    to bottom right, 
+   hsl(191, 19%, 51%), 
+    hsl(15, 17%, 59%)
+  );
+  --bg-gradient-yellow-2: linear-gradient(
+    135deg, 
+    hsla(35, 100%, 68%, 0) 59.86%
+    hsla(45, 100%, 71%, 0.251) 0%, 
+  ), hsl(240, 2%, 13%);
+  --border-gradient-onyx: linear-gradient(
+    to bottom right, 
+    hsl(0, 0%, 25%) 0%, 
+    hsla(0, 0%, 25%, 0) 50%
+  );
+  --text-gradient-yellow: linear-gradient(
+    to right, 
+ hsl(191, 19%, 51%), 
+    hsl(15, 17%, 59%)
+  );
+  
+
+  /* solid */
+
+  --jet:hsl(191, 19%, 51%);
+  --onyx: hsl(240, 1%, 17%);
+  --eerie-black-1: hsl(240, 2%, 13%);
+  --eerie-black-2: hsl(240, 2%, 12%);
+  --smoky-black: linear-gradient(
+	to right,
+	hsl(191, 19%, 51%), 
+    hsl(15, 17%, 59%)
+);
+  --white-1: hsl(0, 0%, 100%);
+  --white-2: hsl(0, 0%, 98%);
+  --orange-yellow-crayola: hsl(191, 19%, 51%);
+  --vegas-gold: hsl(15, 17%, 59%);
+  --light-gray: hsl(0, 0%, 84%);
+  --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --bittersweet-shimmer: hsl(0, 43%, 51%);
+ 
+}
 
 
 
@@ -136,7 +197,7 @@ button {
   background: none;
   border: none;
   text-align: left;
-  cursor: pointer;
+  cursor: url('pointer_hollow.ico'), auto;
 }
 
 input, textarea {
@@ -155,12 +216,10 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body { background: var(--smoky-black); }
-
-
-
-
-
+body { background: var(--smoky-black); 
+   cursor: url('pointer.ico'), auto;
+}
+ 
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
@@ -173,6 +232,7 @@ article {
   padding: 15px;
   box-shadow: var(--shadow-1);
   z-index: 1;
+
 }
 
 .separator {
@@ -279,7 +339,7 @@ article.active {
   padding-top: 45px;
   border-radius: 14px;
   box-shadow: var(--shadow-2);
-  cursor: pointer;
+  cursor: url('pointer_hollow.ico'), auto;
   z-index: 1;
 }
 
@@ -292,7 +352,9 @@ article.active {
   z-index: -1;
 }
 
-
+.highlightedText{
+  color: var(--orange-yellow-crayola);
+}
 
 
 
@@ -334,6 +396,7 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  cursor: none; 
 }
 
 .info-content .name {
@@ -512,7 +575,7 @@ main {
  * #service 
  */
 
-.service { margin-bottom: 35px; }
+.service { margin-bottom: 35px;  }
 
 .service-title { margin-bottom: 20px; }
 
@@ -538,18 +601,24 @@ main {
   background: var(--bg-gradient-jet);
   border-radius: inherit;
   z-index: -1;
+    cursor: url('android.ico'), auto;
+
 }
 
-.service-icon-box { margin-bottom: 10px; }
+.service-icon-box { margin-bottom: 10px; cursor: none; }
 
-.service-icon-box img { margin: auto; }
+.service-icon-box img { margin: auto;
+cursor: url('android.ico'), auto;  }
 
-.service-content-box { text-align: center; }
+.service-content-box { text-align: center; 
+cursor: url('android.ico'), auto; }
 
-.service-item-title { margin-bottom: 7px; }
+.service-item-title { margin-bottom: 7px;
+cursor: url('android.ico'), auto; }
 
 .service-item-text {
   color: var(--light-gray);
+  cursor: url('android.ico'), auto;
   font-size: var(--fs-6);
   font-weight: var(--fw-3);
   line-height: 1.6;
@@ -761,9 +830,12 @@ main {
   width: 100%;
   filter: grayscale(1);
   transition: var(--transition-1);
+  
 }
 
-.clients-item img:hover { filter: grayscale(0); }
+.clients-item img:hover { filter: grayscale(0); 
+  cursor: url('pointer_hollow.ico'), auto;
+}
 
 
 
@@ -773,7 +845,8 @@ main {
   #RESUME
 \*-----------------------------------*/
 
-.article-title { margin-bottom: 30px; }
+.article-title { margin-bottom: 30px; 
+}
 
 
 /**
@@ -939,7 +1012,8 @@ main {
   border-radius: 8px;
 }
 
-.select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); }
+.select-item button:hover { --eerie-black-2: hsl(240, 2%, 20%); 
+}
 
 .project-list {
   display: grid;
@@ -983,7 +1057,9 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5);
+  cursor: url('android.ico'), auto;
+ }
 
 .project-item-icon-box {
   --scale: 0.8;
@@ -1780,21 +1856,21 @@ textarea.form-input::-webkit-resizer { display: none; }
    * RESET
    */
 
-  body::-webkit-scrollbar { width: 20px; }
+  body::-webkit-scrollbar { width: 15px; }
 
   body::-webkit-scrollbar-track { background: var(--smoky-black); }
 
   body::-webkit-scrollbar-thumb {
-    border: 5px solid var(--smoky-black);
+    border: 2px solid var(--smoky-black);
     background: hsla(0, 0%, 100%, 0.1);
-    border-radius: 20px;
+    border-radius: 15px;
     box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
                 inset -1px -1px 0 hsla(0, 0%, 100%, 0.11);
   }
 
   body::-webkit-scrollbar-thumb:hover { background: hsla(0, 0%, 100%, 0.15); }
 
-  body::-webkit-scrollbar-button { height: 60px; }
+  body::-webkit-scrollbar-button { height: 0px; }
 
 
 

@@ -10,12 +10,13 @@
   <!--
     - favicon
   -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
 
   <!--
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/toggleCSS.css">
 
   <!--
     - google font link
@@ -26,7 +27,7 @@
 
 </head>
 
-<body>
+<body id="theme">
 
   <!--
     - #MAIN
@@ -39,7 +40,7 @@
     -->
 
     <aside class="sidebar" data-sidebar>
-
+		
       <div class="sidebar-info"> 
         <figure class="avatar-box">
 		<div style="display: grid;">
@@ -68,21 +69,7 @@
         <div class="separator"></div>
 
         <ul class="contacts-list">
-
-         <!-- <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:mobile.dev.tushar@gmail.com" class="contact-link">mobile.dev.tushar@gmail.com</a>
-            </div>
-
-          </li>
-		-->
+ 
 		
 		<li class="contact-item">
 
@@ -164,7 +151,18 @@
             <button class="navbar-link" data-nav-link>Contact</button>
           </li>
  
-        </ul>
+		 <li >
+		 <label class="container">
+		  <input type="checkbox" id="toggle"/>
+		  <span class="slider round">
+			<div class="background"></div>
+			<div class="star"></div>
+			<div class="star"></div>
+		  </span>
+		</label>
+		</li>
+        
+		</ul>
 
       </nav>
 
@@ -214,7 +212,7 @@
                 <h4 class="h4 service-item-title">Android Application Development</h4>
 
                 <p class="service-item-text">
-                  Professional development of applications for Android OS by following latest industry standards and <b><font style='color:hsl(45, 100%, 72%);'>SOLID principles</font></b>. I prefer developing using <b><font style='color:hsl(45, 100%, 72%);'>Kotlin</font></b> as the primary language albeit I have more years of experience with <b><font style='color:hsl(45, 100%, 72%);'>Core Java</font></b>.
+                  Professional development of applications for Android OS by following latest industry standards and <b><font class="highlightedText">SOLID principles</font></b>. I prefer developing using <b><font class="highlightedText">Kotlin</font></b> as the primary language albeit I have more years of experience with <b><font class="highlightedText">Core Java</font></b>.
                 </p>
               </div>
 
@@ -229,7 +227,7 @@
                 <h4 class="h4 service-item-title">Project Management</h4>
 
                 <p class="service-item-text">
-                  Actively take part in all the stages of <b><font style='color:hsl(45, 100%, 72%);'>SDLC (System Development Life Cycle)</font></b>to manage the development of mobile application. Apart from this, I also have been following <b><font style='color:hsl(45, 100%, 72%);'>SAFe Methodologies</font></b> actively for the past 2 years.
+                  Actively take part in all the stages of <b><font class="highlightedText">SDLC (System Development Life Cycle)</font></b>to manage the development of mobile application. Apart from this, I also have been following <b><font class="highlightedText">SAFe Methodologies</font></b> actively for the past 2 years.
                 </p>
               </div>
 
@@ -244,7 +242,7 @@
                 <h4 class="h4 service-item-title">Unit Testing</h4>
 
                 <p class="service-item-text">
-                  Make sure that the applications are up to the mark and without bugs. This saves time in the long run by a mile. I use <b><font style='color:hsl(45, 100%, 72%);'>JUnit</font></b>, <b><font style='color:hsl(45, 100%, 72%);'>Mockito</font></b> and <b><font style='color:hsl(45, 100%, 72%);'>Doubles/Fakes</font></font></b> in <b><font style='color:hsl(45, 100%, 72%);'>TDD</font></b> apprach constantly.
+                  Make sure that the applications are up to the mark and without bugs. This saves time in the long run by a mile. I use <b><font class="highlightedText">JUnit</font></b>, <b><font class="highlightedText">Mockito</font></b> and <b><font class="highlightedText">Doubles/Fakes</font></font></b> in <b><font class="highlightedText">TDD</font></b> apprach constantly.
                 </p>
               </div>
 
@@ -259,7 +257,7 @@
                 <h4 class="h4 service-item-title">Version Control</h4>
 
                 <p class="service-item-text">
-                  I maintain the code using version control tools such as <b><font style='color:hsl(45, 100%, 72%);'>BitBucket</font></b>, <b><font style='color:hsl(45, 100%, 72%);'>Git</font></b>, <b><font style='color:hsl(45, 100%, 72%);'>SVN</font></b>, etc. I have a good grasp on this and can cherrypick any of these tools depending on the requirment. ;) 
+                  I maintain the code using version control tools such as <b><font class="highlightedText">BitBucket</font></b>, <b><font class="highlightedText">Git</font></b>, <b><font class="highlightedText">SVN</font></b>, etc. I have a good grasp on this and can cherrypick any of these tools depending on the requirment. ;) 
                 </p>
               </div>
 
@@ -274,7 +272,7 @@
                 <h4 class="h4 service-item-title">Client Management</h4>
 
                 <p class="service-item-text">
-                  Manage the communication and <b><font style='color:hsl(45, 100%, 72%);'>client relations</font></b>. Connecting with client comes naturally to me and I have never had a negative experience or situation with the client and I would love to continue the same. 
+                  Manage the communication and <b><font class="highlightedText">client relations</font></b>. Connecting with client comes naturally to me and I have never had a negative experience or situation with the client and I would love to continue the same. 
                 </p>
               </div>
 
@@ -289,7 +287,7 @@
                 <h4 class="h4 service-item-title">CI/CD (DevOps)</h4>
 
                 <p class="service-item-text">
-                  I have some experience with CI/CD tools such as <b><font style='color:hsl(45, 100%, 72%);'>Jenkins</font></b> and <b><font style='color:hsl(45, 100%, 72%);'>BitRise</font></b>. I have written few scripts for the pipelines/jobs in the past. I am very curious to work in DevOps domain as I find this very interesting.  
+                  I have some experience with CI/CD tools such as <b><font class="highlightedText">Jenkins</font></b> and <b><font class="highlightedText">BitRise</font></b>. I have written few scripts for the pipelines/jobs in the past. I am very curious to work in DevOps domain as I find this very interesting.  
                 </p>
               </div>
 
@@ -595,7 +593,7 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
 
               <div class="title-wrapper">
                 <h5 class="h5">Core Java</h5>
-                <data value="95">95%</data>
+                 
               </div>
 
               <div class="skill-progress-bg">
@@ -608,7 +606,7 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
 
               <div class="title-wrapper">
                 <h5 class="h5">Kotlin</h5>
-                <data value="90">90%</data>
+               
               </div>
 
               <div class="skill-progress-bg">
@@ -621,7 +619,7 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
 
               <div class="title-wrapper">
                 <h5 class="h5">Android Application Development</h5>
-                <data value="90">90%</data>
+                
               </div>
 
               <div class="skill-progress-bg">
@@ -633,7 +631,7 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
 
               <div class="title-wrapper">
                 <h5 class="h5">JavaScript & CSS</h5>
-                <data value="55">55%</data>
+                
               </div>
 
               <div class="skill-progress-bg">
@@ -645,7 +643,7 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
 
               <div class="title-wrapper">
                 <h5 class="h5">Angular & Ionic Framework</h5>
-                <data value="60">60%</data>
+                 
               </div>
 
               <div class="skill-progress-bg">
@@ -657,7 +655,7 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
 
               <div class="title-wrapper">
                 <h5 class="h5">JUnit & Mockito</h5>
-                <data value="80">80%</data>
+                 
               </div>
 
               <div class="skill-progress-bg">
@@ -670,7 +668,7 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
 
               <div class="title-wrapper">
                 <h5 class="h5">Jetpack Components</h5>
-                <data value="90">90%</data>
+                 
               </div>
 
               <div class="skill-progress-bg">
@@ -681,7 +679,7 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
 
               <div class="title-wrapper">
                 <h5 class="h5">MVVM</h5>
-                <data value="90">90%</data>
+                 
               </div>
 
               <div class="skill-progress-bg">
@@ -691,7 +689,7 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
             <li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">SAFe & Agile Methodologies (SDLC)</h5>
-                <data value="100">100%</data>
+                 
               </div>
 
               <div class="skill-progress-bg">
@@ -701,7 +699,7 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
 			<li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">Client Management & Interaction</h5>
-                <data value="100">100%</data>
+                 
               </div>
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 100%;"></div>
@@ -710,7 +708,7 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
 			<li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">Project Management Tools: Jira/Trello/BaseCamp/Rally</h5>
-                <data value="100">100%</data>
+                 
               </div>
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 100%;"></div>
@@ -719,7 +717,7 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
 			<li class="skills-item">
               <div class="title-wrapper">
                 <h5 class="h5">Build Release Tools (CI/CD): Jenkins/BitRise</h5>
-                <data value="60">60%</data>
+                 
               </div>
               <div class="skill-progress-bg">
                 <div class="skill-progress-fill" style="width: 60%;"></div>
@@ -1226,8 +1224,8 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
           </ul>
 
         </section>
-		 <a href="https://drive.google.com/file/d/1M3V5-_ReoqfxgqjAcRh4rQy3xPUHiX1m/view" style="color:hsl(45, 100%, 72%);">Click here for full Portfolio List as a file.</a>
-		 <h5 style="color:hsl(45, 100%, 72%);">Note: The broken PlayStore links are replaced by 3rd party stores where the applications are still published.</h5>
+		<!-- <a href="https://drive.google.com/file/d/1M3V5-_ReoqfxgqjAcRh4rQy3xPUHiX1m/view" style="color:hsl(45, 100%, 72%);">Click here for full Portfolio List as a file.</a> -->
+		 <h5 class="highlightedText">Note: The broken PlayStore links are replaced by 3rd party stores where the applications are still published.</h5>
       </article>
 
       <!--
