@@ -4,7 +4,7 @@
 
 
 /**
- * copyright 2022 @codewithsadee
+ * copyright 2023 @TG
  */
 
 
@@ -676,6 +676,9 @@ cursor: url('android.ico'), auto; }
   line-height: 1.6;
 }
 
+.certificates {
+margin-bottom: 30px; 
+}
 
 /**
  * #testimonials 
