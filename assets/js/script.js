@@ -158,12 +158,30 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
+// "(see portfolio)" and any other [data-open-page] links open the corresponding tab
+document.querySelectorAll("[data-open-page]").forEach(function (el) {
+  el.addEventListener("click", function (e) {
+    e.preventDefault();
+    const pageName = this.getAttribute("data-open-page");
+    if (!pageName) return;
 
+    for (let i = 0; i < pages.length; i++) {
+      if (pages[i].dataset.page === pageName) {
+        pages[i].classList.add("active");
+        navigationLinks[i].classList.add("active");
+      } else {
+        pages[i].classList.remove("active");
+        navigationLinks[i].classList.remove("active");
+      }
+    }
+    window.scrollTo(0, 0);
+  });
+});
 
 // for theme
-
 const theme = document.getElementById('theme');
 const changeTheme = document.getElementById('toggle');
+if (changeTheme) {
 changeTheme.onchange = (e) => {
   if (changeTheme.checked === true) {
     document.documentElement.classList.remove("dark")
@@ -176,6 +194,8 @@ changeTheme.onchange = (e) => {
     window.localStorage.setItem('mode', 'dark');
   }
 }
+};
+
 const mode = window.localStorage.getItem('mode');
 if (mode == 'dark') {
   changeTheme.checked = true;

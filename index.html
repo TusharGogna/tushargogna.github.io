@@ -29,7 +29,7 @@
 </head>
 
 <body id="theme">
-
+  <div id="ghost-cursor-root" style="position:fixed;top:0;left:0;width:100vw;height:100vh;min-width:100%;min-height:100%;z-index:0;pointer-events:none;"></div>
   <!--
     - #MAIN
   -->
@@ -203,10 +203,10 @@
         <section class="about-text">
 
           <p>
-            I am a seasoned Android application developer and team leader based in Ontario, Canada, with over a decade of experience in the same while developing and releasing high quality applications to the market keeping scalability in mind. I have worked on a variety of applications (see portfolio).
-	  </p>
+            I am a seasoned Android application developer and team leader based in Ontario, Canada, with over a decade of experience in the same while developing and releasing high quality applications to the market keeping scalability in mind. I have worked on a variety of applications <a href="#" class="open-page-link" data-open-page="portfolio">(see portfolio)</a>.</span>
+          </p>
 	   <p>
-	    I have experience working both independently and collaboratively, including but not limited to, a Fortune 500 company (FIS). I am currently working as an Android Engineer at Wayfair. I feel comfortable working in any environment thanks to my ability to adapt seamlessly. I am an expert in Kotlin, Core Java, Android Jetpack components, JUnit, and MVVM architecture. Additionally, my creative mind loves to brainstorm every detail so that there is no margin for error. 
+	    I have experience working both independently and collaboratively, including but not limited to, a Fortune 500 company (<a target="_blank" rel="noopener noreferrer" href="https://www.fisglobal.com/">F.I.S</a>). I am currently working as an Android Engineer at <a target="_blank" rel="noopener noreferrer" href="https://www.wayfair.com/">Wayfair</a>. I feel comfortable working in any environment thanks to my ability to adapt seamlessly. I am an expert in Kotlin, Core Java, Android Jetpack components, JUnit, and MVVM architecture. Additionally, my creative mind loves to brainstorm every detail so that there is no margin for error. 
 	    </p><p>
 	    In addition to Android, I am aspiring KMP (Kotlin Multiplatform) and iOS developer.
           </p>
@@ -1128,6 +1128,22 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
               </a>
             </li>
             <li class="project-item  active" data-filter-item data-category="social/e-commerce">
+              <a href="https://play.google.com/store/search?q=wayfair&c=apps">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/projects/wayfair.png" alt="Wayfair" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Wayfair</h3>
+
+                <p class="project-category">Shopping Application</p>
+              </a>
+            </li>
+            <li class="project-item  active" data-filter-item data-category="social/e-commerce">
               <a href="https://apkpure.com/ilook/com.ilookapp.android">
 
                 <figure class="project-img">
@@ -1568,7 +1584,9 @@ Firebase, HTML, XML, Json, Android Studio, Basecamp, SVN, BitBucket, Git, etc.</
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script type="module" src="./dist/ghost-cursor-bg.js"></script>
 </body>
 
 </html>

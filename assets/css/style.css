@@ -1937,8 +1937,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   article { min-height: 100%; }
 
-
-
+.open-page-link {
+  display: inline;
+  color: var(--orange-yellow-crayola);
+  text-decoration: none;
+  cursor: pointer;
+}
+.open-page-link:hover {
+  text-decoration: underline;
+}
+  .no-break {
+    white-space: nowrap;
+  }
+  .about-text a {
+    display: inline;
+    color: var(--orange-yellow-crayola);
+    text-decoration: none;
+  }
+  .about-text a:hover {
+    text-decoration: underline;
+  }
   /**
    * MAIN
    */
