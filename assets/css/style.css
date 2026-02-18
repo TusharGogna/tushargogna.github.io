@@ -4,7 +4,7 @@
 
 
 /**
- * copyright 2023 @TG
+ * copyright 2026 @TG
  */
 
 
@@ -1375,13 +1375,39 @@ textarea.form-input::-webkit-resizer { display: none; }
 
 @media (min-width: 450px) {
 
+/**
+   * #REUSED STYLE
+   */
+   .sidebar, article {
+    box-shadow: var(--shadow-5);
+  }
+
   /**
    * client
    */
 
   .clients-item { min-width: calc(33.33% - 10px); }
 
-
+  .open-page-link {
+    display: inline;
+    color: var(--orange-yellow-crayola);
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .open-page-link:hover {
+    text-decoration: underline;
+    }
+    .no-break {
+      white-space: nowrap;
+    }
+    .about-text a {
+      display: inline;
+      color: var(--orange-yellow-crayola);
+      text-decoration: none;
+    }
+    .about-text a:hover {
+      text-decoration: underline;
+    }
 
   /**
    * #PORTFOLIO, BLOG 
@@ -1422,7 +1448,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   }
 
-
+  .open-page-link {
+    display: inline;
+    color: var(--orange-yellow-crayola);
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .open-page-link:hover {
+    text-decoration: underline;
+    }
+    .no-break {
+      white-space: nowrap;
+    }
+    .about-text a {
+      display: inline;
+      color: var(--orange-yellow-crayola);
+      text-decoration: none;
+    }
+    .about-text a:hover {
+      text-decoration: underline;
+    }
 
   /**
    * #REUSED STYLE
@@ -1432,6 +1477,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 520px;
     margin-inline: auto;
     padding: 30px;
+    box-shadow: var(--shadow-5);
   }
 
   .article-title {
@@ -1463,8 +1509,7 @@ textarea.form-input::-webkit-resizer { display: none; }
   }
 
 
-
-  /**
+   /**
    * #SIDEBAR
    */
 
@@ -1695,8 +1740,10 @@ textarea.form-input::-webkit-resizer { display: none; }
   /**
    * REUSED STYLE
    */
-
-  .sidebar, article { width: 700px; }
+   .sidebar, article {
+    width: 700px;
+    box-shadow: var(--shadow-5);
+  }
 
   .has-scrollbar::-webkit-scrollbar-button { width: 100px; }
 
@@ -1719,7 +1766,26 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   .navbar-link { --fs-8: 15px; }
 
-
+  .open-page-link {
+    display: inline;
+    color: var(--orange-yellow-crayola);
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .open-page-link:hover {
+    text-decoration: underline;
+    }
+    .no-break {
+      white-space: nowrap;
+    }
+    .about-text a {
+      display: inline;
+      color: var(--orange-yellow-crayola);
+      text-decoration: none;
+    }
+    .about-text a:hover {
+      text-decoration: underline;
+    }
 
   /**
    * ABOUT
@@ -1833,7 +1899,26 @@ textarea.form-input::-webkit-resizer { display: none; }
     margin: auto;
   }
 
-
+  .open-page-link {
+    display: inline;
+    color: var(--orange-yellow-crayola);
+    text-decoration: none;
+    cursor: pointer;
+    }
+    .open-page-link:hover {
+    text-decoration: underline;
+    }
+    .no-break {
+      white-space: nowrap;
+    }
+    .about-text a {
+      display: inline;
+      color: var(--orange-yellow-crayola);
+      text-decoration: none;
+    }
+    .about-text a:hover {
+      text-decoration: underline;
+    }
 
   /**
    * NAVBAR
@@ -1937,15 +2022,15 @@ textarea.form-input::-webkit-resizer { display: none; }
 
   article { min-height: 100%; }
 
-.open-page-link {
+  .open-page-link {
   display: inline;
   color: var(--orange-yellow-crayola);
   text-decoration: none;
   cursor: pointer;
-}
-.open-page-link:hover {
+  }
+  .open-page-link:hover {
   text-decoration: underline;
-}
+  }
   .no-break {
     white-space: nowrap;
   }
@@ -1975,9 +2060,7 @@ textarea.form-input::-webkit-resizer { display: none; }
     width: 75%;
     margin: 0;
   }
-
-
-
+  
   /**
    * SIDEBAR
    */
