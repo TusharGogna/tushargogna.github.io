@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Tushar Gogna | Portfolio</title>
+  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/toggleCSS.css">
+  <link rel="stylesheet" href="./assets/css/hero_image.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body id="theme">
+  <div id="ghost-cursor-root" style="position:fixed;top:0;left:0;width:100vw;height:100vh;min-width:100%;min-height:100%;z-index:0;pointer-events:none;"></div>
+  <main>
+    <aside class="sidebar" data-sidebar>
+      <div class="sidebar-info">
+        <figure class="avatar-box">
+          <section class="hero-area" width="15" id="parallax">
+            <div class="layer" id="l4">
+              <img src="./assets/images/android_jetpact.png" width="15" alt="bg-shape">
+            </div>
+          </section>
+          <div style="display: grid;">
+            <img src="./assets/images/my-avatar.png" style="grid-column-start: first-col; grid-row-start: first-row" width="80">
+          </div>
+        </figure>
+        <div class="info-content">
+          <h1 class="name" title="Tushar Gogna">Tushar Gogna</h1>
+          <p class="title">Native Android Developer</p>
+          <p class="title">(Kotlin Certified)</p>
+        </div>
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+      </div>
+      <div class="sidebar-info_more">
+        <div class="separator"></div>
+        <ul class="contacts-list">
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Stoney Creek, Ontario, Canada</address>
+            </div>
+          </li>
+          <li class="contact-item">
+            <div class="icon-box">
+              <ion-icon name="logo-stackoverflow"></ion-icon>
+            </div>
+            <div class="contact-info">
+              <p class="contact-title">StackOverflow Flair</p>
+              <a href="https://stackexchange.com/users/4324594"><img src="https://stackexchange.com/users/flair/4324594.png?theme=dark" width="160" height="48" alt="profile for Tushar Gogna on Stack Exchange"></a>
+            </div>
+          </li>
+        </ul>
+        <div class="separator"></div>
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/TusharGogna" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://drive.google.com/file/d/1M3V5-_ReoqfxgqjAcRh4rQy3xPUHiX1m/view" class="social-link">
+              <ion-icon name="briefcase"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://stackoverflow.com/users/3531756/tushar-gogna" class="social-link">
+              <ion-icon name="logo-stackoverflow"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+
+    <div class="main-content">
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="about.html" class="navbar-link">About</a>
+          </li>
+          <li class="navbar-item">
+            <a href="resume.html" class="navbar-link">Resume</a>
+          </li>
+          <li class="navbar-item">
+            <a href="portfolio.html" class="navbar-link active">Portfolio</a>
+          </li>
+          <li class="navbar-item">
+            <a href="contact.html" class="navbar-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <article class="portfolio active" data-page="portfolio">
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+        <section class="projects">
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Utility</button></li>
+            <li class="filter-item"><button data-filter-btn>Financial</button></li>
+            <li class="filter-item"><button data-filter-btn>Service</button></li>
+            <li class="filter-item"><button data-filter-btn>Social/E-commerce</button></li>
+            <li class="filter-item"><button data-filter-btn>POS (Point of sale)</button></li>
+            <li class="filter-item"><button data-filter-btn>Git Projects/Libraries</button></li>
+          </ul>
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+            </button>
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Utility</button></li>
+              <li class="select-item"><button data-select-item>Financial</button></li>
+              <li class="select-item"><button data-select-item>Service</button></li>
+              <li class="select-item"><button data-select-item>Social/E-commerce</button></li>
+              <li class="select-item"><button data-select-item>POS (Point of sale)</button></li>
+              <li class="select-item"><button data-select-item>Git Projects/Libraries</button></li>
+            </ul>
+          </div>
+          <ul class="project-list">
+            <li class="project-item active" data-filter-item data-category="financial">
+              <a href="https://play.google.com/store/apps/details?id=com.mfoundry.mb.android.mb_774">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-4.webp" alt="Renasant Mobile" loading="lazy">
+                </figure>
+                <h3 class="project-title">Renasant Mobile</h3>
+                <p class="project-category">Financial Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="financial">
+              <a href="https://play.google.com/store/apps/details?id=com.mfoundry.mb.android.mb_140">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-5.webp" alt="BOH Mobile Banking" loading="lazy">
+                </figure>
+                <h3 class="project-title">BOH Mobile Banking</h3>
+                <p class="project-category">Financial Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="financial">
+              <a href="https://play.google.com/store/apps/details?id=com.mfoundry.mb.android.mb_240">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-14.webp" alt="BOH_" loading="lazy">
+                </figure>
+                <h3 class="project-title">BOH for Guam, Saipan, Palau</h3>
+                <p class="project-category">Financial Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="financial">
+              <a href="https://play.google.com/store/apps/details?id=com.fordcredit.fmba">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-6.webp" alt="Ford Money" loading="lazy">
+                </figure>
+                <h3 class="project-title">Ford Money</h3>
+                <p class="project-category">Financial Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="utility">
+              <a href="https://play.google.com/store/apps/details?id=com.eclip.elepho.ble">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-1.webp" alt="eClip" loading="lazy">
+                </figure>
+                <h3 class="project-title">eClip</h3>
+                <p class="project-category">Utility Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="utility">
+              <a href="https://www.modapkdown.com/tbox.com.camera/tbox-technologies-mod/">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-2.png" alt="TBox" loading="lazy">
+                </figure>
+                <h3 class="project-title">TBox</h3>
+                <p class="project-category">Utility Application</br>[PlayStore Link Broken as of 2023]</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="service">
+              <a href="https://play.google.com/store/apps/details?id=com.micogreen.micocar.micocardriverapp">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-7.webp" alt="Micocar" loading="lazy">
+                </figure>
+                <h3 class="project-title">Mico: Driver</h3>
+                <p class="project-category">Service Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="service">
+              <a href="https://micocar.en.aptoide.com/app">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-12.jpg" alt="Micocar" loading="lazy">
+                </figure>
+                <h3 class="project-title">Mico: Customer</h3>
+                <p class="project-category">Service Application</br>[PlayStore Link Broken as of 2023]</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="social/e-commerce">
+              <a href="https://play.google.com/store/search?q=wayfair&c=apps">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/wayfair.png" alt="Wayfair" loading="lazy">
+                </figure>
+                <h3 class="project-title">Wayfair</h3>
+                <p class="project-category">Shopping Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="social/e-commerce">
+              <a href="https://apkpure.com/ilook/com.ilookapp.android">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-8.webp" alt="iLook" loading="lazy">
+                </figure>
+                <h3 class="project-title">iLook</h3>
+                <p class="project-category">Social Networking Application</br>[PlayStore Link Broken as of 2023]</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="social/e-commerce">
+              <a href="https://play.google.com/store/apps/details?id=com.a4free&hl=en_IN&gl=US">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-9.webp" alt="4Free" loading="lazy">
+                </figure>
+                <h3 class="project-title">4Free</h3>
+                <p class="project-category">E-Commerce Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="pos (point of sale)">
+              <a href="https://m.apkpure.com/e-service-ticket-field-mgt/com.eticketing">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-10.webp" alt="e-Service Ticket, Field-Mgt" loading="lazy">
+                </figure>
+                <h3 class="project-title">e-Service Ticket, Field-Mgt</h3>
+                <p class="project-category">Point Of Sale Application</br>[PlayStore Link Broken as of 2023]</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="utility">
+              <a href="https://play.google.com/store/apps/details?id=com.swaraj">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-11.webp" alt="Swaraj" loading="lazy">
+                </figure>
+                <h3 class="project-title">Swaraj SDMD</h3>
+                <p class="project-category">Utility Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="utility">
+              <a href="https://play.google.com/store/apps/details?id=com.gymetrix&hl=en">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-3.webp" alt="GyMetrix (MapMyGym)" loading="lazy">
+                </figure>
+                <h3 class="project-title">GyMetrix (MapMyGym)</h3>
+                <p class="project-category">Utility Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="service">
+              <a href="https://www.apkmonk.com/app/com.ridebazaar.passengers/">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-13.png" alt="Micocar" loading="lazy">
+                </figure>
+                <h3 class="project-title">Ride Bazaar: Passengers</h3>
+                <p class="project-category">Service Application</br>[PlayStore Link Broken as of 2023]</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="service">
+              <a href="https://www.apkmonk.com/app/com.ridebazaar.driver/">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-13.png" alt="Micocar" loading="lazy">
+                </figure>
+                <h3 class="project-title">Ride Bazaar: Driver</h3>
+                <p class="project-category">Service Application</br>[PlayStore Link Broken as of 2023]</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="financial">
+              <a href="https://play.google.com/store/apps/details?id=com.mfoundry.mb.android.mb_101105817">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-15.webp" alt="FIS_mBanking_5817" loading="lazy">
+                </figure>
+                <h3 class="project-title">MyBankCNB Mobile</h3>
+                <p class="project-category">Financial Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="financial">
+              <a href="https://play.google.com/store/apps/details?id=com.mfoundry.mb.android.mb_10x">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-16.webp" alt="Micocar" loading="lazy">
+                </figure>
+                <h3 class="project-title">SBIC Personal Mobile</h3>
+                <p class="project-category">Financial Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="utility">
+              <a href="https://play.google.com/store/apps/details?id=com.swarajrndtesting">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-17.webp" alt="FIS_mBanking_5817" loading="lazy">
+                </figure>
+                <h3 class="project-title">Swaraj ORC</h3>
+                <p class="project-category">Utility Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="social/e-commerce">
+              <a href="https://www.apkmonk.com/app/com.bifoot/">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-18.png" alt="bitfoot" loading="lazy">
+                </figure>
+                <h3 class="project-title">BiFoot</h3>
+                <p class="project-category">Social Networking Application</br>[PlayStore Link Broken as of 2023]</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="pos (point of sale)">
+              <a href="https://m.apkpure.com/wayup-merchant/com.kunal.loyalty">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-19.webp" alt="bitfoot" loading="lazy">
+                </figure>
+                <h3 class="project-title">Tally (Wayup Merchant)</h3>
+                <p class="project-category">Point Of Sale Application</br>[PlayStore Link Broken as of 2023]</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="social/e-commerce">
+              <a href="https://apkpure.com/mysitti/com.pack.anmysitti">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-20.webp" alt="mysitti" loading="lazy">
+                </figure>
+                <h3 class="project-title">Mysitti</h3>
+                <p class="project-category">E-Commerce Application</br>[PlayStore Link Broken as of 2023]</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="utility">
+              <a href="https://play.google.com/store/apps/details?id=com.app.tagupcam">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-23.webp" alt="mysitti" loading="lazy">
+                </figure>
+                <h3 class="project-title">TagUp</h3>
+                <p class="project-category">Utility Application (Sports)</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="social/e-commerce">
+              <a href="https://apkcombo.com/sharpquestion/com.sharp.qsn/">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-21.webp" alt="mysitti" loading="lazy">
+                </figure>
+                <h3 class="project-title">SharpQuestion</h3>
+                <p class="project-category">Social Networking Application</br>[PlayStore Link Broken as of 2023]</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="service">
+              <a href="https://www.apkmonk.com/app/llc.chinesepod.android/">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/project-22.png" alt="chinesepod" loading="lazy">
+                </figure>
+                <h3 class="project-title">ChinesePod</h3>
+                <p class="project-category">Service Application</br>[PlayStore Link Broken as of 2023]</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="git projects/libraries">
+              <a href="https://github.com/TusharGogna/simpleToDo">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/git.png" alt="todo" loading="lazy">
+                </figure>
+                <h3 class="project-title">Simple ToDo (Kotlin)</h3>
+                <p class="project-category">Utility Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="git projects/libraries">
+              <a href="https://github.com/TusharGogna/TermsText_Composable">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/git.png" alt="terms" loading="lazy">
+                </figure>
+                <h3 class="project-title">Terms & Condition Text (Jetpack Compose)</h3>
+                <p class="project-category">Android Library</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="git projects/libraries">
+              <a href="https://github.com/TusharGogna/PublicPhoto">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/git.png" alt="terms" loading="lazy">
+                </figure>
+                <h3 class="project-title">PublicPhoto (via Gravatar)</h3>
+                <p class="project-category">Android/Kotlin Library</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="git projects/libraries">
+              <a href="https://github.com/TusharGogna/EarthUnzipped">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/git.png" alt="terms" loading="lazy">
+                </figure>
+                <h3 class="project-title">EarthUnzipped (GraphQL/Jetpack Compose)</h3>
+                <p class="project-category">POC Application</p>
+              </a>
+            </li>
+            <li class="project-item active" data-filter-item data-category="git projects/libraries">
+              <a href="https://github.com/TusharGogna/Github-Searcher-Android">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <img src="./assets/images/projects/git.png" alt="terms" loading="lazy">
+                </figure>
+                <h3 class="project-title">Github Search (GraphQL/Jetpack Compose)</h3>
+                <p class="project-category">POC Application</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+        <h5 class="highlightedText">Note: The broken PlayStore links are replaced by 3rd party stores where the applications are still published.</h5>
+      </article>
+    </div>
+  </main>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/hero_img_script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
