@@ -20,16 +20,42 @@
   <main>
     <aside class="sidebar" data-sidebar>
       <div class="sidebar-info">
-        <figure class="avatar-box">
-          <section class="hero-area" width="15" id="parallax">
-            <div class="layer" id="l4">
-              <img src="./assets/images/android_jetpact.png" width="15" alt="bg-shape">
+        <div class="desktop-content">
+          <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.61/build/spline-viewer.js"></script>
+          <spline-viewer hint loading-anim-type="none" url="https://prod.spline.design/7LsziKczQmvabV67/scene.splinecode"></spline-viewer>
+        </div>
+        <div class="mobile-content">
+          <figure class="avatar-box">
+            <section class="hero-area" width="15" id="parallax">
+              <div class="layer" id="l4">
+                <img src="./assets/images/android_jetpact.png" width="15" alt="bg-shape">
+              </div>
+            </section>
+            <div style="display: grid;">
+              <img src="./assets/images/my-avatar.png" style="grid-column-start: first-col; grid-row-start: first-row" width="80">
             </div>
-          </section>
-          <div style="display: grid;">
-            <img src="./assets/images/my-avatar.png" style="grid-column-start: first-col; grid-row-start: first-row" width="80">
-          </div>
-        </figure>
+          </figure>
+        </div>
+
+        <style>
+          /* Default: Show for desktop, hide for mobile */
+          .desktop-content {
+            display: block;
+          }
+          .mobile-content {
+            display: none;
+          }
+        
+          /* Mobile: When screen is 768px or smaller */
+          @media (max-width: 1249px) {
+            .desktop-content {
+              display: none;
+            }
+            .mobile-content {
+              display: block;
+            }
+          }
+        </style>
         <div class="info-content">
           <h1 class="name" title="Tushar Gogna">Tushar Gogna</h1>
           <p class="title">Native Android Developer</p>
